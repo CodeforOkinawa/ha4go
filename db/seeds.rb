@@ -58,3 +58,4 @@ end
 ].each do |r|
   AppInformation.where(r).first_or_create
 end
+load(Rails.root.join('db', 'seeds', "#{Rails.env.downcase}.rb"))
